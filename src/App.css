@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.link{
+  text-decoration: none !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar{
+  background-color :#563d7c !important ;
+  
+}
+.navbar-light .navbar-brand Link {
+  color: #fff !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navlinks{
+  margin-left: 130px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+  padding: 5px 10px !important;
+  text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+color: blue !important;
+transition: all 0.5s;
+border-radius: 3px;
+}
+.navbar-light .navbar-nav .login:hover{
+  background-color: whitesmoke;
+}
+.navbar-light .navbar-nav .login{
+  margin-left: 100px;
+}
+/** search bar**/
+#searchBlock{
+  background-image: url('./images/bg-image.jpg');
+  max-width: 100%;
+  height: 30vh;
+  background-position:50%;
+
+}
+
+#searchBlock .searchInput{
+   padding: 10px 200px;
+   position: absolute;
+   top: 120px;
+   left: 300px;
+   outline: none;
+   border: none;
+   width: 50%;
+}
+
+#searchBlock .searchbtn{
+   padding: 10px 15px;
+   border: none;
+   background:#563d7c;
+   color: white;
+   font-size: 1rem;
+   margin-left:-4px;
+   position: absolute;
+   top: 120px;
+   left: 980px;
+}
+/*foooter*/
+footer.footer{
+  height: 100%;
+  background:#111;
+  position: relative;
+
+}
+footer.footer .container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+footer.footer .container>div{
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem .9rem;
+  color:#ccc;
+}
+footer.footer .container  h2{
+color: white;
+}
+
+footer.footer .newsletter .form-element input{
+  padding: .5rem .7rem;
+  border: none;
+  background: transparent;
+  color: whitesmoke;
+ width: 74%;
+ font-size: 1rem;
+ 
+}
+
+footer.footer .newsletter .form-element span{
+  display: block;
+  margin: 2px;
+  padding: .5rem .7rem;
+  cursor: pointer;
+  color:#ccc;
+  
+}
+footer.footer .instagram div>img{
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin: .3rem .4rem;
+}
+footer.footer .follow div .i{
+  color:white;
+  padding: 0 .4rem;
+  font-size: 3rem !important;
+}
+footer.footer .rights{
+  justify-content: center;
+  padding-bottom: 20px;
+  
+}
+footer.footer .rights .text-gray{
+  color: #ccc;
+  text-align: center;
+}
+footer.footer .move-up{
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  
+}
+footer.footer .move-up span{
+  color:#bbb;
+  font-size: 2rem;
+}
+footer.footer .move-up span:hover{
+  color: white;
+  cursor: pointer;
+}
+@media(max-width:1125px){
+  .navlinks{
+    margin-left: 70px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-light .navbar-nav .login{
+    margin-left: 50px !important;
   }
+}
+
+@media (max-width: 992px){
+
+  .navlinks{
+    margin-left: 70px !important;
+  }
+  .navbar-light .navbar-nav .login{
+   margin-left: 150px !important;
+    width: 50% !important;
+  }
+  .navbar-light .navbar-nav .nav-link{
+   text-align: center;
+    padding: 5px 10px !important;
+    margin-left: -100px;
+
+  }
+  #searchBlock .searchInput{
+    padding: 7px 30px;
+    width: 30%;
+    position: absolute;
+    top: 10px;
+    left: 320px;
+    outline: none;
+    border: none;
+    z-index: 1;
+}
+
+#searchBlock .searchbtn{
+    padding: 7px 10px;
+    border: none;
+    background: #006bdd ;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 10px;
+    left: 600px;
+    z-index: 1;
+
+
+}
+}
+
+@media (max-width:650px){
+  #searchBlock .searchInput{
+    padding: 5px 8px;
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    width: 30%;
+    
+}
+
+#searchBlock .searchbtn{
+    padding: 5px 3px;
+    position: absolute;
+    top: 10px;
+    left: 440px;
+   
+
+
+}
+}
+
+@media (max-width:450px){
+  .navbar-light .navbar-brand {
+    color: #fff !important;
+    font-size: 1rem;
+  }
+  #searchBlock .searchInput{
+    padding: 3px 5px;
+    position: absolute;
+    top: 13px;
+    left: 165px;
+    width: 25%;
+    
+}
+#searchBlock .searchInput::placeholder{
+  font-size: 0.8rem;
+  overflow: visible;
+}
+
+#searchBlock .searchbtn{
+    padding: 3px 2px;
+    position: absolute;
+    top: 13px;
+    left: 275px;
+   
+
+
+}
 }

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.container-fluid{
+    background: whitesmoke;
+     width: 100%;
+     height: 100%;
+ 
+ }
+ .blog-content .img{
+     width: 100% !important;
+     height: 200px !important;
+ 
+ }
+ 
+ .container-fluid .blog-content{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     width: 90%;
+     margin: 3rem 2rem ;
+     box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+     background: #fff;
+     font-family: 'Noto Sans', sans-serif;
+ }
+  .blog-content.blog-title{
+     padding: 2rem 0;
+ }
+  .blog-content .btn-blog{
+     padding: 0.7rem 2rem;
+     background: var(--sky);
+     margin: 0.5rem;
+    
+    
+ }
+  .blog-content span{
+     display: block;
+     padding-bottom: 20px;
+     
+ }
+ 
+ 
