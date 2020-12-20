@@ -19,7 +19,7 @@
 }
 
 .navlinks{
-  margin-left: 130px;
+  margin-left: 100px;
 }
 .navbar-light .navbar-nav .nav-link {
   color: #fff !important;
@@ -47,16 +47,19 @@ border-radius: 3px;
 }
 
 #searchBlock .searchInput{
-   padding: 10px 200px;
+    max-width: 50%;
+    height: 6%;
    position: absolute;
    top: 120px;
-   left: 300px;
+   left: 270px;
    outline: none;
    border: none;
-   width: 50%;
+
 }
 
 #searchBlock .searchbtn{
+  max-width: 10%;
+  height: 6%;
    padding: 10px 15px;
    border: none;
    background:#563d7c;
@@ -65,7 +68,8 @@ border-radius: 3px;
    margin-left:-4px;
    position: absolute;
    top: 120px;
-   left: 980px;
+   left: 950px;
+   text-align: center;
 }
 /*foooter*/
 footer.footer{
@@ -187,6 +191,10 @@ footer.footer .move-up span:hover{
     z-index: 1;
 
 
+}
+footer.footer .container{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 }
 

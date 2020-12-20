@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
+import 'isomorphic-fetch'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faRupeeSign} from '@fortawesome/free-solid-svg-icons';
-
+import {FaRupeeSign} from  'react-icons/fa';
 import './Carousel1.css';
 
 class Carousel1 extends Component {
@@ -15,14 +14,20 @@ class Carousel1 extends Component {
        <div className='container-fluid ' >            
        <h1 style={{padding:'1.5rem'}} >Featured Collections</h1>
 
-        <OwlCarousel className="owl-theme"  items={3} loop  margin={12}  autoplay={true}>
+        <OwlCarousel className="owl-theme"  items={3} loop  margin={12}  autoplay={true} responsive={{0:{
+            items:1
+        },
+        600:{items:3},
+        1000:{
+            items:3
+        }}}>
             <div className="blog-content">
                 <img className="img" src={'assets/images/plot1.jpg'}  alt="plotImg" />
             <div className="blog-title">
                                 <h3>Aratt Group</h3>
                                 <p>by Aratt Pvt Ltd </p>
                                 <span>40-60ft Plots</span>
-                                <span> < FontAwesomeIcon icon={faRupeeSign} />35.71L-66.22L</span>
+                                <span> <FaRupeeSign/>35.71L-66.22L</span>
                                
                             </div>
                             </div>
@@ -32,7 +37,7 @@ class Carousel1 extends Component {
                                 <h3>Prestige Group</h3>
                                 <p>by Prestige Pvt Ltd </p>
                                 <span>2,3 BHK Apartments</span>
-                                <span> < FontAwesomeIcon icon={faRupeeSign} />15000-18000</span>
+                                <span> <FaRupeeSign/>15000-18000</span>
                                
                             </div>
                             </div>
@@ -42,7 +47,7 @@ class Carousel1 extends Component {
                                 <h3>Etha Su Casa Royal</h3>
                                 <p>by Etha Realty Pvt Ltd </p>
                                 <span>2,3 BHK Apartments</span>
-                                <span> < FontAwesomeIcon icon={faRupeeSign} />35.71L-66.22L</span>
+                                <span> <FaRupeeSign/>35.71L-66.22L</span>
                                
                             </div>
                             </div>
@@ -53,7 +58,7 @@ class Carousel1 extends Component {
                                 <h3>Etha Su Casa Royal</h3>
                                 <p>by Etha Realty Pvt Ltd </p>
                                 <span>2,3 BHK Apartments</span>
-                                <span> < FontAwesomeIcon icon={faRupeeSign} />35.71L-66.22L</span>
+                                <span> <FaRupeeSign/>35.71L-66.22L</span>
                                
                             </div>
                             </div>
@@ -63,7 +68,7 @@ class Carousel1 extends Component {
                                 <h3>Floor Plan </h3>
                                 <p>Design Your Dream House </p>
                                 <span>By The Best Architecture</span>
-                                <span> < FontAwesomeIcon icon={faRupeeSign} />35.71L-66.22L</span>
+                                <span> <FaRupeeSign/>35.71L-66.22L</span>
                                
                             </div>
                             </div>

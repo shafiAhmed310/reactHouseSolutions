@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Jumbotron , Button} from 'react-bootstrap'
 import  {FaRupeeSign } from 'react-icons/fa';
+import Footer from '../screens/Footer';
 import './Plots.css' ;
 class Rent extends Component {
     render() {
@@ -60,7 +61,7 @@ class Rent extends Component {
                  </div>
              </div>
            </Jumbotron>
-           <Jumbotron>
+           <Jumbotron  className="footerRoutes">
              <div className="gridBlock">
                  <div>
                      <img alt="flat" src={'assets/images/rent5.jpg'} />
@@ -78,6 +79,7 @@ class Rent extends Component {
                  </div>
              </div>
            </Jumbotron>
+           <Footer />
         </div>
         );
     }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom';
 import {Jumbotron , Button} from 'react-bootstrap'
 import  {FaRupeeSign } from 'react-icons/fa';
+import Footer from '../screens/Footer';
 import './Plots.css' ;
 
 class PlotRoute extends Component {
@@ -62,7 +63,7 @@ class PlotRoute extends Component {
                      </div>
                  </div>
                </Jumbotron>
-               <Jumbotron>
+               <Jumbotron  className="footerRoutes">
                  <div className="gridBlock">
                      <div>
                          <img alt="plots" src={'assets/images/plot9.jpg'} />
@@ -80,6 +81,7 @@ class PlotRoute extends Component {
                      </div>
                  </div>
                </Jumbotron>
+               <Footer />
             </div>
         );
     }

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.LoginBlock{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fefdf8;
+
+}
+
+.bgImg img{
+    max-width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+}
+.FormBlock{
+    margin-right:3rem ;
+   padding-top: 4rem !important;
+   padding-bottom: 4rem !important;
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    background: white !important;
+   
+}
+h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+form input {
+    margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+   border: 2px solid #ccc;
+    outline: none;
+  padding: 5px 15px;
+}
+input::placeholder{
+    font-size: 0.8rem;
+}
+
+form button{
+margin-top: 1rem;
+width: 100%;
+height: 100%;
+padding: 5px 0px;
+border: none;
+background: #563d7c;
+color: white;
+
+}
+
+@media(max-width:992px){
+    .LoginBlock{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .FormBlock{
+        width: 100%;
+    }
+}

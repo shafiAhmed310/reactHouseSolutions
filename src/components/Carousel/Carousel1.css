@@ -10,6 +10,7 @@
      height: 100%;
  
  }
+ 
  .blog-content .img{
      width: 100% !important;
      height: 200px !important;
@@ -17,11 +18,11 @@
  }
  
  .container-fluid .blog-content{
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
      text-align: center;
      width: 90%;
-     margin: 3rem 2rem ;
+     margin: 2rem 1rem ;
      box-shadow: 0 15px 20px rgba(0,0,0,0.2);
      background: #fff;
      font-family: 'Noto Sans', sans-serif;
@@ -41,5 +42,4 @@
      padding-bottom: 20px;
      
  }
- 
  

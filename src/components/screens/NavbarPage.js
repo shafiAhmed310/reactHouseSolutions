@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import {Nav, Navbar} from 'react-bootstrap';
 import LoginModal from './LoginModal';
 import '../../App.css';
@@ -14,12 +14,13 @@ const NavbarPage = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav" className="resNav">
     <Nav className="navlinks">
-        <Nav.Link><Link  className="link" to="/plot">Plots</Link></Nav.Link>
-        <Nav.Link> <Link  className="link" to="/flat">Flats</Link></Nav.Link>
-      <Nav.Link><Link  className="link" to="/rent">Rent</Link></Nav.Link>
-      <Nav.Link><Link  className="link" to="/const">Floor Plan</Link></Nav.Link>
-      <Nav.Link><Link  className="link" to="/const">Construction</Link></Nav.Link>
-      <Nav.Link href="#contact">Contact us</Nav.Link>
+        <Link className="nav-link" to="/plot">Plots</Link>
+        <Link className="nav-link"  to="/flat"> Flats</Link>
+      <Link className="nav-link" to="/rent">Rent</Link>
+      <Link className="nav-link" to="/const">Floor Plan</Link>
+      <Link className="nav-link" to="/const">Construction</Link>
+      <Link className="nav-link" to="/vendorLogin">Vendor</Link>
+      <Nav.Link className="nav-link" href="#contact">Contact us</Nav.Link>
     
     </Nav>
     <Nav className="navlogin">
