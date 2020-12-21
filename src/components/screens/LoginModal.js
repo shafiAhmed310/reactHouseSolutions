@@ -18,7 +18,7 @@ const LoginModal = (props) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-      <Form>
+      <Form className="loginBlock">
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
     <Form.Control type="email" placeholder="Enter email" required />

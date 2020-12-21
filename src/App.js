@@ -1,6 +1,6 @@
 import React  from 'react';
 import {BrowserRouter as Router , Switch , Route } from 'react-router-dom';
-require ('isomorphic-fetch');
+import'isomorphic-fetch';
 import Navbar from './components/screens/NavbarPage';
 import HomeScreen from './components/screens/HomeScreen';
 import PlotRoute from './components/Routes/PlotRoute';

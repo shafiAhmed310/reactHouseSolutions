@@ -11,13 +11,20 @@ const HomeScreen = () => {
         <div className="container">
              
       <main>
-      <section id="searchBlock">
+      <section className="searchBlock">
         <article>
-            <div>
-  <form action="#">
+          <div className=" spaceBlock" >
+           
+          </div>
+          <div className="formBlock">
+          <form action="#">
    <input className="searchInput" type="search" placeholder="Search for plots flats floor plan...." />
    <button className="searchbtn" type="submit">Search</button>
   </form>
+
+  </div>
+            <div className=" spaceBlock1" >
+           
             </div>
         </article>
         </section>

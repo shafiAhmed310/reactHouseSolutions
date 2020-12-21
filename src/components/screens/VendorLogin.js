@@ -5,9 +5,12 @@ class VendorLogin extends Component {
     render() {
         return (
             <div className="container">
-                <div className="LoginBlock">
+                <div className="vendorLogin">
                 <div className="bgImg">
                     <img src={'assets/images/home.jpg'} />
+                </div>
+                <div className="vendorSpace">
+              
                 </div>
               <div className="FormBlock">
                     <h3>Vendor Login</h3>
